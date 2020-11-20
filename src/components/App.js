@@ -22,7 +22,7 @@ class App extends React.Component {
     // console.log(newlyAdopted)
 
     // this.setState({
-    // pets: [...this.state.pets, newlyAdopted]
+    // pets: [...this.state.pets, newlyAdopted[0]]
     // })
     let updatedPets = this.state.pets.map(pet => {
       return (pet.id === id) ? {...pet, isAdopted: true } : pet
